@@ -4,18 +4,6 @@
 #include "Player/UserSaveGame.h"
 #include "Misc/DateTime.h"
 
-USTRUCT(BlueprintType)
-struct FObjective
-{
-	GENERATED_BODY()
-public:
-	FString ObjectiveName;
-	FString ObjectiveDescription;
-	int Reward;
-	float CurrentProgress;
-	float MaxProgress;
-};
-
 UUserSaveGame::UUserSaveGame()
 {
 	Level = 1;
