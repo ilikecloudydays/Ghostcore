@@ -4,10 +4,10 @@
 #include "Player/UserSaveGame.h"
 #include "Misc/DateTime.h"
 
-USTUCT(BlueprintType)
+USTRUCT(BlueprintType)
 struct FObjective
 {
-
+	
 };
 
 UUserSaveGame::UUserSaveGame()
