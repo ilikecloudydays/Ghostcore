@@ -4,6 +4,12 @@
 #include "Player/UserSaveGame.h"
 #include "Misc/DateTime.h"
 
+USTUCT(BlueprintType)
+struct FObjective
+{
+
+};
+
 UUserSaveGame::UUserSaveGame()
 {
 	Level = 1;
