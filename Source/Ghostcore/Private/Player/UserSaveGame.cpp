@@ -19,7 +19,6 @@ UUserSaveGame::UUserSaveGame()
 	UserOptions.ShadowQuality = "High";
 	UserOptions.TextureQuality = "High";
 	UserOptions.FrameRate = 60.0f;
-	UserOptions.FrameRate = 60.0f;
 	UserOptions.VSync = "Yes";
 	UserOptions.MouseSensivity = 1.0f;
 }
