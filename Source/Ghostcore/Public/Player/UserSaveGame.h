@@ -29,23 +29,6 @@ public:
 		FString VSync;
 };
 
-USTRUCT(BlueprintType)
-struct FObjective
-{
-	GENERATED_BODY()
-public:
-	UPROPERTY(BlueprintReadWrite)
-		FString Objective;
-	UPROPERTY(BlueprintReadWrite)
-		int CurrentProgress = 0;
-	UPROPERTY(BlueprintReadWrite)
-		int MaxProgress;
-	UPROPERTY(BlueprintReadWrite)
-		int Reward;
-	UPROPERTY(BlueprintReadWrite)
-		FDateTime WhenStart;
-};
-
 UCLASS()
 class GHOSTCORE_API UUserSaveGame : public USaveGame
 {
@@ -62,23 +45,7 @@ protected:
 		FString Rank;
 	UPROPERTY(BlueprintReadWrite)
 		int Money;
-	//UPROPERTY(BlueprintReadWrite)
-	//	TArray<FItem> OwnedItems;
-	//UPROPERTY(BlueprintReadOnly)
-	//	TArray<FObjective> AllDailyObjectives;
-	//UPROPERTY(BlueprintReadOnly)
-	//	TArray<FObjective> AllWeeklyObjectives;
-	//UPROPERTY(BlueprintReadOnly)
-	//	TArray<FObjective> CurrentDailyChallenges;
-	//UPROPERTY(BlueprintReadOnly)
-	//	TArray<FObjective> CurrentWeeklyChallenges;
 public:
 	UPROPERTY(BlueprintReadWrite)
 		FUserOptions UserOptions;
-
-protected:
-	UFUNCTION(BlueprintCallable)
-		void SelectRandomDailyObjectives();
-	UFUNCTION(BlueprintCallable)
-		void SelectRandomWeeklyObjectives();
 };
